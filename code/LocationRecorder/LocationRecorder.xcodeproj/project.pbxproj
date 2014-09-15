@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BE041BA19961F8F00723D0C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE041B919961F8F00723D0C /* AVFoundation.framework */; };
+		3BE041BC19961FB500723D0C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE041BB19961FB500723D0C /* AudioToolbox.framework */; };
+		3BE041BE19961FC100723D0C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE041BD19961FC100723D0C /* Accelerate.framework */; };
+		3BF23E4519A540F000EC7EDE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E4419A540F000EC7EDE /* CoreData.framework */; };
+		3BF23E4719A540FD00EC7EDE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E4619A540FD00EC7EDE /* CoreText.framework */; };
+		3BF23E4919A5410200EC7EDE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E4819A5410200EC7EDE /* GLKit.framework */; };
+		3BF23E4B19A5410800EC7EDE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E4A19A5410800EC7EDE /* ImageIO.framework */; };
+		3BF23E4D19A5411200EC7EDE /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E4C19A5411200EC7EDE /* libc++.dylib */; };
+		3BF23E4F19A5411F00EC7EDE /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E4E19A5411F00EC7EDE /* libicucore.dylib */; };
+		3BF23E5119A5413800EC7EDE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E5019A5413800EC7EDE /* libz.dylib */; };
+		3BF23E5319A5413E00EC7EDE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E5219A5413E00EC7EDE /* OpenGLES.framework */; };
+		3BF23E5519A5414300EC7EDE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E5419A5414300EC7EDE /* QuartzCore.framework */; };
+		3BF23E5719A5414900EC7EDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF23E5619A5414900EC7EDE /* SystemConfiguration.framework */; };
+		C1AFB0B21587A18F5939C287 /* HRRecordingSessionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBED90E381566E265104A /* HRRecordingSessionsManager.m */; };
+		C1AFB14A0F20E53EDEFE739E /* HRDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFB59AC46A498D767C55DD /* HRDatabase.m */; };
+		C1AFB182F8D34D77A6143C46 /* HRRecordingSessionsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBE5797A08B7E29B1E556 /* HRRecordingSessionsViewCell.m */; };
+		C1AFB1C417D41EE76F5CCE90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1AFB04B918A41F3B0896BF1 /* Images.xcassets */; };
+		C1AFB1E047D9E239729A0651 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AFB7F4FD3BC141C0F6E819 /* InfoPlist.strings */; };
+		C1AFB216FC93BEE1ECC90E13 /* HRStreeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBE48E074F0FE79166D38 /* HRStreeViewViewController.m */; };
+		C1AFB284A9BC3784B6035C5F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFBBECE0DDE5DBBF3BC88E /* XCTest.framework */; };
+		C1AFB2B03276FABF3F460A86 /* HRLocationRecordingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBD2E57E7E384B913C6A0 /* HRLocationRecordingFilter.m */; };
+		C1AFB35C604D9183B247FF90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFB02D716D75F679F1401D /* Foundation.framework */; };
+		C1AFB3CADF527655D385E505 /* HRLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFB7765E386D9E5DE4C281 /* HRLocationManager.m */; };
+		C1AFB46A43E127B3DB33DCF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFBB7D8874D9628272D60C /* CoreGraphics.framework */; };
+		C1AFB4F15BF16AD3CE401298 /* HRRecordingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBEDB19C6C78AC74E1C08 /* HRRecordingSession.m */; };
+		C1AFB506FEAF2AF5CE247BA4 /* HRecordingSessionSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFB3214DA101727AF8FBCB /* HRecordingSessionSnapshot.m */; };
+		C1AFB53F6BC39D95B9A44B0D /* LocationRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFB7027CD2C09E25B7E3D7 /* LocationRecorderTests.m */; };
+		C1AFB5952AA87EC84BD5402D /* HRFileSystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBB51292B6551A44EF07B /* HRFileSystemHelper.m */; };
+		C1AFB62BEC55CC33296A5B05 /* HRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBC5223F62FF0FA6A1229 /* HRAppDelegate.m */; };
+		C1AFB768B5245015EB52F7C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFB02D716D75F679F1401D /* Foundation.framework */; };
+		C1AFB89CC6F3C1DDD5ACB356 /* HRRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBB9D11879A01563D4727 /* HRRecordViewController.m */; };
+		C1AFBA5ADA75D3131E31CCE4 /* HRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFB7155C5F467074924F08 /* HRMapViewController.m */; };
+		C1AFBB3469638A18C7471410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFB38C922C14085C5A0860 /* main.m */; };
+		C1AFBC81AE51DE4015E46077 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFB41DCC8C08B576D0ACD2 /* UIKit.framework */; };
+		C1AFBCF6D7901C3C95055049 /* HRRecordingSessionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFB3C4ED15F86634DD9C17 /* HRRecordingSessionsViewController.m */; };
+		C1AFBD6A0694AD954A5AA52F /* HRRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFBC9397DD9078C5EF8531 /* HRRecordView.m */; };
+		C1AFBE091C93611A22BBF165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFB41DCC8C08B576D0ACD2 /* UIKit.framework */; };
+		C1AFBE6CC650EE7A8D5DB306 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AFB865C5752001F5F6E03F /* CoreLocation.framework */; };
+		C1AFBFD19A8201E979F262C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AFB0A88D06874C097AA134 /* InfoPlist.strings */; };
+		D25DDF2FD053466A985A974C /* libPods-LocationRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB1269435834D43B17B9605 /* libPods-LocationRecorder.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1AFB0AC15E67701859D5DEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1AFB5B6CD8D4F123D9CEDFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1AFBB789DF4596F71CF6D23;
+			remoteInfo = LocationRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BE041B919961F8F00723D0C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3BE041BB19961FB500723D0C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3BE041BD19961FC100723D0C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3BF23E4419A540F000EC7EDE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3BF23E4619A540FD00EC7EDE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3BF23E4819A5410200EC7EDE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3BF23E4A19A5410800EC7EDE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3BF23E4C19A5411200EC7EDE /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3BF23E4E19A5411F00EC7EDE /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		3BF23E5019A5413800EC7EDE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3BF23E5219A5413E00EC7EDE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3BF23E5419A5414300EC7EDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3BF23E5619A5414900EC7EDE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8CB1269435834D43B17B9605 /* libPods-LocationRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AFB02D716D75F679F1401D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1AFB04B918A41F3B0896BF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C1AFB0BB45689BE507B18DCD /* HRRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRecordView.h; sourceTree = "<group>"; };
+		C1AFB0D7EABB9866F9C6F9DB /* LocationRecorder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LocationRecorder-Info.plist"; sourceTree = "<group>"; };
+		C1AFB3214DA101727AF8FBCB /* HRecordingSessionSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRecordingSessionSnapshot.m; sourceTree = "<group>"; };
+		C1AFB38C922C14085C5A0860 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1AFB3C4ED15F86634DD9C17 /* HRRecordingSessionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRecordingSessionsViewController.m; sourceTree = "<group>"; };
+		C1AFB3F4D9669B2F7129DF9A /* LocationRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AFB41DCC8C08B576D0ACD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C1AFB48983FF648ABC8674E7 /* HRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRAppDelegate.h; sourceTree = "<group>"; };
+		C1AFB493C1936F399D3F8C06 /* HRLocationRecordingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRLocationRecordingFilter.h; sourceTree = "<group>"; };
+		C1AFB51B00443DD0BAB4DE24 /* HRRecordingSessionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRecordingSessionsManager.h; sourceTree = "<group>"; };
+		C1AFB594D2AFA62F2D9D1204 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1AFB59AC46A498D767C55DD /* HRDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRDatabase.m; sourceTree = "<group>"; };
+		C1AFB5BE603E4760F2056FB4 /* LocationRecorder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationRecorder-Prefix.pch"; sourceTree = "<group>"; };
+		C1AFB7027CD2C09E25B7E3D7 /* LocationRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationRecorderTests.m; sourceTree = "<group>"; };
+		C1AFB7155C5F467074924F08 /* HRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMapViewController.m; sourceTree = "<group>"; };
+		C1AFB7765E386D9E5DE4C281 /* HRLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRLocationManager.m; sourceTree = "<group>"; };
+		C1AFB865C5752001F5F6E03F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C1AFB95B4A8F5C5A49DAB2F5 /* HRLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRLocationManager.h; sourceTree = "<group>"; };
+		C1AFB9C6AC7D1AFAEAEAB26A /* HRStreeViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRStreeViewViewController.h; sourceTree = "<group>"; };
+		C1AFBACA51A02613651AAB30 /* HRFileSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRFileSystemHelper.h; sourceTree = "<group>"; };
+		C1AFBB51292B6551A44EF07B /* HRFileSystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRFileSystemHelper.m; sourceTree = "<group>"; };
+		C1AFBB7D8874D9628272D60C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C1AFBB9D11879A01563D4727 /* HRRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRecordViewController.m; sourceTree = "<group>"; };
+		C1AFBBDB1C4C9CBD8F8170A1 /* HRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMapViewController.h; sourceTree = "<group>"; };
+		C1AFBBECE0DDE5DBBF3BC88E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C1AFBC109E487A9094002CEB /* HRRecordingSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRecordingSession.h; sourceTree = "<group>"; };
+		C1AFBC5223F62FF0FA6A1229 /* HRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRAppDelegate.m; sourceTree = "<group>"; };
+		C1AFBC559A745518B9F332AD /* HRRecordingSessionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRecordingSessionsViewController.h; sourceTree = "<group>"; };
+		C1AFBC9397DD9078C5EF8531 /* HRRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRecordView.m; sourceTree = "<group>"; };
+		C1AFBD2E57E7E384B913C6A0 /* HRLocationRecordingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRLocationRecordingFilter.m; sourceTree = "<group>"; };
+		C1AFBD2FBCCE8E2663B02F77 /* HRecordingSessionSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRecordingSessionSnapshot.h; sourceTree = "<group>"; };
+		C1AFBD33BC8A2C39BC0C9117 /* LocationRecorderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LocationRecorderTests-Info.plist"; sourceTree = "<group>"; };
+		C1AFBD4C77C7722E3A004F14 /* HRRecordingSessionsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRecordingSessionsViewCell.h; sourceTree = "<group>"; };
+		C1AFBDFDA6A3F1B3A8DC1BE9 /* HRRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRRecordViewController.h; sourceTree = "<group>"; };
+		C1AFBE48E074F0FE79166D38 /* HRStreeViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRStreeViewViewController.m; sourceTree = "<group>"; };
+		C1AFBE5797A08B7E29B1E556 /* HRRecordingSessionsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRecordingSessionsViewCell.m; sourceTree = "<group>"; };
+		C1AFBE86D6C531AD8468969D /* HRDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRDatabase.h; sourceTree = "<group>"; };
+		C1AFBEA015AF4597157E96DD /* LocationRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AFBED90E381566E265104A /* HRRecordingSessionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRecordingSessionsManager.m; sourceTree = "<group>"; };
+		C1AFBEDB19C6C78AC74E1C08 /* HRRecordingSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRRecordingSession.m; sourceTree = "<group>"; };
+		C1AFBFCF394ED180F3EC6358 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F728C47CE14F4F5DAE9E8101 /* Pods-LocationRecorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationRecorder.xcconfig"; path = "Pods/Pods-LocationRecorder.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1AFB2332FD28F5BBAF222CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF23E5719A5414900EC7EDE /* SystemConfiguration.framework in Frameworks */,
+				3BF23E5519A5414300EC7EDE /* QuartzCore.framework in Frameworks */,
+				3BF23E5319A5413E00EC7EDE /* OpenGLES.framework in Frameworks */,
+				3BF23E5119A5413800EC7EDE /* libz.dylib in Frameworks */,
+				3BF23E4F19A5411F00EC7EDE /* libicucore.dylib in Frameworks */,
+				3BF23E4D19A5411200EC7EDE /* libc++.dylib in Frameworks */,
+				3BF23E4B19A5410800EC7EDE /* ImageIO.framework in Frameworks */,
+				3BF23E4919A5410200EC7EDE /* GLKit.framework in Frameworks */,
+				3BF23E4719A540FD00EC7EDE /* CoreText.framework in Frameworks */,
+				C1AFBE6CC650EE7A8D5DB306 /* CoreLocation.framework in Frameworks */,
+				3BF23E4519A540F000EC7EDE /* CoreData.framework in Frameworks */,
+				3BE041BA19961F8F00723D0C /* AVFoundation.framework in Frameworks */,
+				3BE041BE19961FC100723D0C /* Accelerate.framework in Frameworks */,
+				3BE041BC19961FB500723D0C /* AudioToolbox.framework in Frameworks */,
+				C1AFB35C604D9183B247FF90 /* Foundation.framework in Frameworks */,
+				C1AFB46A43E127B3DB33DCF4 /* CoreGraphics.framework in Frameworks */,
+				C1AFBC81AE51DE4015E46077 /* UIKit.framework in Frameworks */,
+				D25DDF2FD053466A985A974C /* libPods-LocationRecorder.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AFB9C32FC6EDBAAFD1213E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AFB284A9BC3784B6035C5F /* XCTest.framework in Frameworks */,
+				C1AFB768B5245015EB52F7C1 /* Foundation.framework in Frameworks */,
+				C1AFBE091C93611A22BBF165 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1AFB078174B2DD50BC945FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFBEDB19C6C78AC74E1C08 /* HRRecordingSession.m */,
+				C1AFBC109E487A9094002CEB /* HRRecordingSession.h */,
+				C1AFBD2FBCCE8E2663B02F77 /* HRecordingSessionSnapshot.h */,
+				C1AFB3214DA101727AF8FBCB /* HRecordingSessionSnapshot.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1AFB1137235682BC92094AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BF23E5619A5414900EC7EDE /* SystemConfiguration.framework */,
+				3BF23E5419A5414300EC7EDE /* QuartzCore.framework */,
+				3BF23E5219A5413E00EC7EDE /* OpenGLES.framework */,
+				3BF23E5019A5413800EC7EDE /* libz.dylib */,
+				3BF23E4E19A5411F00EC7EDE /* libicucore.dylib */,
+				3BF23E4C19A5411200EC7EDE /* libc++.dylib */,
+				3BF23E4A19A5410800EC7EDE /* ImageIO.framework */,
+				3BF23E4819A5410200EC7EDE /* GLKit.framework */,
+				3BF23E4619A540FD00EC7EDE /* CoreText.framework */,
+				3BF23E4419A540F000EC7EDE /* CoreData.framework */,
+				3BE041BD19961FC100723D0C /* Accelerate.framework */,
+				3BE041BB19961FB500723D0C /* AudioToolbox.framework */,
+				3BE041B919961F8F00723D0C /* AVFoundation.framework */,
+				C1AFB02D716D75F679F1401D /* Foundation.framework */,
+				C1AFBB7D8874D9628272D60C /* CoreGraphics.framework */,
+				C1AFB41DCC8C08B576D0ACD2 /* UIKit.framework */,
+				C1AFBBECE0DDE5DBBF3BC88E /* XCTest.framework */,
+				8CB1269435834D43B17B9605 /* libPods-LocationRecorder.a */,
+				C1AFB865C5752001F5F6E03F /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1AFB182AA2BEE5B9D3D9217 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFB59AC46A498D767C55DD /* HRDatabase.m */,
+				C1AFBE86D6C531AD8468969D /* HRDatabase.h */,
+				C1AFBED90E381566E265104A /* HRRecordingSessionsManager.m */,
+				C1AFB51B00443DD0BAB4DE24 /* HRRecordingSessionsManager.h */,
+				C1AFBB51292B6551A44EF07B /* HRFileSystemHelper.m */,
+				C1AFBACA51A02613651AAB30 /* HRFileSystemHelper.h */,
+				C1AFB7765E386D9E5DE4C281 /* HRLocationManager.m */,
+				C1AFB95B4A8F5C5A49DAB2F5 /* HRLocationManager.h */,
+				C1AFBD2E57E7E384B913C6A0 /* HRLocationRecordingFilter.m */,
+				C1AFB493C1936F399D3F8C06 /* HRLocationRecordingFilter.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C1AFB2CCEF54F91B7E58BE6D /* LocationRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFBC48D2FE3B1FE8518877 /* Supporting Files */,
+				C1AFB48983FF648ABC8674E7 /* HRAppDelegate.h */,
+				C1AFBC5223F62FF0FA6A1229 /* HRAppDelegate.m */,
+				C1AFB04B918A41F3B0896BF1 /* Images.xcassets */,
+				C1AFB81894D4FA1446286A06 /* Controllers */,
+				C1AFBA3DBF3D92E8B555100A /* Views */,
+				C1AFB182AA2BEE5B9D3D9217 /* Services */,
+				C1AFB078174B2DD50BC945FD /* Models */,
+			);
+			path = LocationRecorder;
+			sourceTree = "<group>";
+		};
+		C1AFB2F21DAB27D2C73684B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFBD33BC8A2C39BC0C9117 /* LocationRecorderTests-Info.plist */,
+				C1AFB0A88D06874C097AA134 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1AFB7E34CDD96A17FDA644A = {
+			isa = PBXGroup;
+			children = (
+				C1AFBAE80511CAA3296D774E /* Products */,
+				C1AFB1137235682BC92094AB /* Frameworks */,
+				C1AFB2CCEF54F91B7E58BE6D /* LocationRecorder */,
+				C1AFB8B2410FBFE609908EFA /* LocationRecorderTests */,
+				F728C47CE14F4F5DAE9E8101 /* Pods-LocationRecorder.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C1AFB81894D4FA1446286A06 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFBB9D11879A01563D4727 /* HRRecordViewController.m */,
+				C1AFBDFDA6A3F1B3A8DC1BE9 /* HRRecordViewController.h */,
+				C1AFB3C4ED15F86634DD9C17 /* HRRecordingSessionsViewController.m */,
+				C1AFBC559A745518B9F332AD /* HRRecordingSessionsViewController.h */,
+				C1AFBE5797A08B7E29B1E556 /* HRRecordingSessionsViewCell.m */,
+				C1AFBD4C77C7722E3A004F14 /* HRRecordingSessionsViewCell.h */,
+				C1AFB7155C5F467074924F08 /* HRMapViewController.m */,
+				C1AFBBDB1C4C9CBD8F8170A1 /* HRMapViewController.h */,
+				C1AFBE48E074F0FE79166D38 /* HRStreeViewViewController.m */,
+				C1AFB9C6AC7D1AFAEAEAB26A /* HRStreeViewViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C1AFB8B2410FBFE609908EFA /* LocationRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFB2F21DAB27D2C73684B5 /* Supporting Files */,
+				C1AFB7027CD2C09E25B7E3D7 /* LocationRecorderTests.m */,
+			);
+			path = LocationRecorderTests;
+			sourceTree = "<group>";
+		};
+		C1AFBA3DBF3D92E8B555100A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFBC9397DD9078C5EF8531 /* HRRecordView.m */,
+				C1AFB0BB45689BE507B18DCD /* HRRecordView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C1AFBAE80511CAA3296D774E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFBEA015AF4597157E96DD /* LocationRecorder.app */,
+				C1AFB3F4D9669B2F7129DF9A /* LocationRecorderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1AFBC48D2FE3B1FE8518877 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFB0D7EABB9866F9C6F9DB /* LocationRecorder-Info.plist */,
+				C1AFB7F4FD3BC141C0F6E819 /* InfoPlist.strings */,
+				C1AFB38C922C14085C5A0860 /* main.m */,
+				C1AFB5BE603E4760F2056FB4 /* LocationRecorder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1AFBB789DF4596F71CF6D23 /* LocationRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AFB7DEF30C5F6EE27D32C8 /* Build configuration list for PBXNativeTarget "LocationRecorder" */;
+			buildPhases = (
+				2302BA16E7A344DDB75E94C7 /* Check Pods Manifest.lock */,
+				C1AFB002B96149C982B952E8 /* Sources */,
+				C1AFB2332FD28F5BBAF222CF /* Frameworks */,
+				C1AFBBF07A4740D83CB6B21B /* Resources */,
+				CEB6EFC40EAC417ABDD8E554 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationRecorder;
+			productName = LocationRecorder;
+			productReference = C1AFBEA015AF4597157E96DD /* LocationRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1AFBE7D5040C4D46371CCE8 /* LocationRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AFBD94D608E207619B2056 /* Build configuration list for PBXNativeTarget "LocationRecorderTests" */;
+			buildPhases = (
+				C1AFBBD8E7479606D002D4AD /* Sources */,
+				C1AFB9C32FC6EDBAAFD1213E /* Frameworks */,
+				C1AFB9F95AFA031CBA7A09E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1AFBD21151DBAF22D3B8D9B /* PBXTargetDependency */,
+			);
+			name = LocationRecorderTests;
+			productName = LocationRecorderTests;
+			productReference = C1AFB3F4D9669B2F7129DF9A /* LocationRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1AFB5B6CD8D4F123D9CEDFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = ANIKAHAR;
+				TargetAttributes = {
+					C1AFBB789DF4596F71CF6D23 = {
+						DevelopmentTeam = N7SXV96K9T;
+					};
+				};
+			};
+			buildConfigurationList = C1AFB2230A6184FF84B48D0A /* Build configuration list for PBXProject "LocationRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C1AFB7E34CDD96A17FDA644A;
+			productRefGroup = C1AFBAE80511CAA3296D774E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1AFBB789DF4596F71CF6D23 /* LocationRecorder */,
+				C1AFBE7D5040C4D46371CCE8 /* LocationRecorderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1AFB9F95AFA031CBA7A09E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AFBFD19A8201E979F262C0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AFBBF07A4740D83CB6B21B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AFB1E047D9E239729A0651 /* InfoPlist.strings in Resources */,
+				C1AFB1C417D41EE76F5CCE90 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2302BA16E7A344DDB75E94C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEB6EFC40EAC417ABDD8E554 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-LocationRecorder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1AFB002B96149C982B952E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AFBB3469638A18C7471410 /* main.m in Sources */,
+				C1AFB62BEC55CC33296A5B05 /* HRAppDelegate.m in Sources */,
+				C1AFB89CC6F3C1DDD5ACB356 /* HRRecordViewController.m in Sources */,
+				C1AFBD6A0694AD954A5AA52F /* HRRecordView.m in Sources */,
+				C1AFB14A0F20E53EDEFE739E /* HRDatabase.m in Sources */,
+				C1AFB4F15BF16AD3CE401298 /* HRRecordingSession.m in Sources */,
+				C1AFB0B21587A18F5939C287 /* HRRecordingSessionsManager.m in Sources */,
+				C1AFB5952AA87EC84BD5402D /* HRFileSystemHelper.m in Sources */,
+				C1AFB3CADF527655D385E505 /* HRLocationManager.m in Sources */,
+				C1AFB2B03276FABF3F460A86 /* HRLocationRecordingFilter.m in Sources */,
+				C1AFB506FEAF2AF5CE247BA4 /* HRecordingSessionSnapshot.m in Sources */,
+				C1AFBCF6D7901C3C95055049 /* HRRecordingSessionsViewController.m in Sources */,
+				C1AFB182F8D34D77A6143C46 /* HRRecordingSessionsViewCell.m in Sources */,
+				C1AFBA5ADA75D3131E31CCE4 /* HRMapViewController.m in Sources */,
+				C1AFB216FC93BEE1ECC90E13 /* HRStreeViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AFBBD8E7479606D002D4AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AFB53F6BC39D95B9A44B0D /* LocationRecorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1AFBD21151DBAF22D3B8D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1AFBB789DF4596F71CF6D23 /* LocationRecorder */;
+			targetProxy = C1AFB0AC15E67701859D5DEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1AFB0A88D06874C097AA134 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AFB594D2AFA62F2D9D1204 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C1AFB7F4FD3BC141C0F6E819 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AFBFCF394ED180F3EC6358 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1AFB2D66CC48A8B5B99D22F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationRecorder/LocationRecorder-Prefix.pch";
+				INFOPLIST_FILE = "LocationRecorderTests/LocationRecorderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		C1AFB7CCCDA896B4A28E05B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1AFBB2F804F511C4FDC5017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationRecorder/LocationRecorder-Prefix.pch";
+				INFOPLIST_FILE = "LocationRecorderTests/LocationRecorderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C1AFBD0FAE51622A3D9B59A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F728C47CE14F4F5DAE9E8101 /* Pods-LocationRecorder.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationRecorder/LocationRecorder-Prefix.pch";
+				INFOPLIST_FILE = "LocationRecorder/LocationRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C1AFBE24B8F7F275553193F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1AFBE35ED35B9E731431F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F728C47CE14F4F5DAE9E8101 /* Pods-LocationRecorder.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationRecorder/LocationRecorder-Prefix.pch";
+				INFOPLIST_FILE = "LocationRecorder/LocationRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1AFB2230A6184FF84B48D0A /* Build configuration list for PBXProject "LocationRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AFB7CCCDA896B4A28E05B6 /* Debug */,
+				C1AFBE24B8F7F275553193F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AFB7DEF30C5F6EE27D32C8 /* Build configuration list for PBXNativeTarget "LocationRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AFBE35ED35B9E731431F00 /* Debug */,
+				C1AFBD0FAE51622A3D9B59A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AFBD94D608E207619B2056 /* Build configuration list for PBXNativeTarget "LocationRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AFBB2F804F511C4FDC5017 /* Debug */,
+				C1AFB2D66CC48A8B5B99D22F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1AFB5B6CD8D4F123D9CEDFB /* Project object */;
+}

@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, "7.0"
+
+target "LocationRecorder" do
+	# pod 'AWSiOSSDKv2'
+	pod 'TheAmazingAudioEngine', '1.4.2'
+  pod 'ReactiveCocoa', '2.3.1'
+  pod 'libextobjc'
+  pod 'FMDB', '2.3'
+  pod 'ViewUtils', '1.1.2'
+  pod 'Mantle', '1.5'
+  pod 'TLIndexPathTools', '0.3.4'
+  pod 'Google-Maps-iOS-SDK', '1.8.1'
+end
+
+target "LocationRecorderTests" do
+
+end
+
